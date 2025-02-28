@@ -1,6 +1,6 @@
 import requests
 
-url = "https://api.groq.com/openai/v1/chat/completions"  # Sostituisci con l'endpoint della tua API
+url = "https://api.groq.com/v1/data"  # Sostituisci con l'endpoint della tua API
 headers = {
     "Authorization": "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",  # Sostituisci con la tua API key
     "Content-Type": "application/json"
