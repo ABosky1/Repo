@@ -10,7 +10,12 @@ url = "https://api.groq.com/openai/v1/chat/completions"
 # Sostituisci con i dati di input per la previsione
 input_data = {
     "text": "Il cielo è azzurro",
-    "messages": ["it"]  # sostituisci "language" con "messages"
+    "messages": [
+        {
+            "role": "user",
+            "content": "Il cielo è azzurro"
+        }
+    ]
 }
 
 # Esegui la chiamata all'API
