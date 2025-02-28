@@ -5,7 +5,7 @@ import json
 api_key = "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"
 
 # Sostituisci con l'URL dell'API di Groq AI
-url = "https://api.groq.ai/v1/predict"
+url = "https://api.groq.com/openai/v1/chat/completions"
 
 # Sostituisci con i dati di input per la previsione
 input_data = {
