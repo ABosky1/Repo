@@ -5,10 +5,9 @@ import json
 api_key = "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"
 
 # Sostituisci con l'URL dell'API di Groq AI
-url = "https://api.groq.com/openai/v1/chat/completions"
-
+url = "https://api.groq.ai/v1/predict"
 input_data = {
-    "seed": "Il cielo è azzurro",
+    "seed": 123,
     "messages": [
         {
             "role": "user",
