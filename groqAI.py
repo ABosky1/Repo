@@ -1,20 +1,17 @@
 import requests
 
-url = "https://api.groq.com/v1/data"  # Sostituisci con l'endpoint della tua API
+url = "https://api.groq.com/v1/query"
 headers = {
-    "Authorization": "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",  # Sostituisci con la tua API key
+    "Authorization": "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",
     "Content-Type": "application/json"
 }
 data = {
-    "param1": "1",  # Sostituisci con i parametri richiesti dall'API
-    "param2": "2"
+    "query": "Qual è la capitale della Francia?"
 }
 
 response = requests.post(url, headers=headers, json=data)
 
 if response.status_code == 200:
-    print("Richiesta eseguita con successo!")
-    print(response.json())
+    print("Risposta:", response.json())
 else:
-    print("Errore nella richiesta:")
-    print(response.text)
+    print("Errore:", response.text)
